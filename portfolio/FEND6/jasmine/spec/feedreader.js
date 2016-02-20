@@ -137,8 +137,9 @@ $(function() {
             $('.icon-list').trigger('click');
 
             setTimeout(function() {
-                // Wait 250ms
+                // Wait 500ms
                 // Waiting gives this CSS transition time to complete --> transition: transform 0.2s;
+                // I originally had a 250ms wait, but up to 500ms may be necessary for testing on mobile devices
                 done();
             }, 500);
         });
