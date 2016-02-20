@@ -140,7 +140,7 @@ $(function() {
                 // Wait 250ms
                 // Waiting gives this CSS transition time to complete --> transition: transform 0.2s;
                 done();
-            }, 250);
+            }, 500);
         });
 
         it('moves laterally when the menu icon is clicked.', function() {
