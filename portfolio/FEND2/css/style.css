@@ -102,9 +102,10 @@ a {
 }
 
 .welcome-message {
-    font-size: 18px;
+    font-size: 16px;
     color: #f3f3f3;
     line-height: 28px;
+    max-width: 650px;
 }
 
 #skills-h3 {
@@ -169,7 +170,7 @@ ul {
     float: left;
     padding: 10px;
     width: 200px;
-    display: none;
+    display: block;
 }
 
 img {
@@ -201,7 +202,14 @@ span {
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (min-width: 750px) {
+    #skills-h3,
+    .biopic {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 749px) {
     #lets-connect {
         margin-top: 10%;
     }
@@ -209,7 +217,45 @@ span {
         width: 150px;
     }
     .welcome-message {
-        display: none;
+        font-size: 14px;
+    }
+}
+
+.contact.flex-item {
+    padding-bottom: 5px;
+}
+
+
+/* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
+
+@media only screen and (max-width: 749px) and (min-width: 650px) {
+    #topContacts,
+    #footerContacts {
+        display: block;
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 20px;
+        height: 85px;
+        text-align: left;
+    }
+}
+
+
+/* Show contact info in one column. */
+
+@media only screen and (max-width: 649px) {
+    #topContacts,
+    #footerContacts {
+        display: block;
+        text-align: left;
+    }
+
+    .welcome-message{
+        background-color: purple;
+        display: block;
     }
 }
 
@@ -225,9 +271,8 @@ span {
     padding-bottom: 5%;
 }
 
-@media only screen and (min-width: 750px) {
-    #skills-h3,
-    .biopic {
+@media only screen and (max-width: 450px) {
+    #role {
         display: block;
     }
 }
