@@ -1,35 +1,31 @@
 body,
 div,
-ul,
-li,
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+li,
+p,
+ul {
     padding: 0;
     margin: 0;
     font-family: "Noto Sans", sans-serif;
 }
 
-.clear-fix {
-    overflow: auto;
+h2,
+h3,
+h4,
+h5 {
+    padding: 10px 5%;
 }
 
-.inline-link {
-    display: inline;
-}
-
-.underline-link:hover {
-    text-decoration: underline;
-}
-
-.education-entry,
-.work-entry,
-.project-entry {
-    padding: 0 5%;
+a {
+    color: #092568;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
 }
 
 h1 {
@@ -65,11 +61,51 @@ h4 {
     line-height: 17px;
 }
 
-h2,
-h3,
-h4,
-h5 {
-    padding: 10px 5%;
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+    line-height: 21px;
+}
+
+span {
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+    padding: 0 5%;
+}
+
+.biopic {
+    float: left;
+    padding: 10px;
+    width: 200px;
+    display: block;
+}
+
+.center-content {
+    padding: 2.5% 5%;
+}
+
+.clear-fix {
+    overflow: auto;
+}
+
+.contact.flex-item {
+    padding-bottom: 5px;
+}
+
+.dark-gray {
+    background-color: #4a4a4a;
 }
 
 .date-text {
@@ -80,6 +116,34 @@ h5 {
     float: left;
 }
 
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.gray {
+    background-color: #f3f3f3;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+.inline-link {
+    display: inline;
+}
+
+
+.light-blue {
+    background-color: #85a3f3;
+}
+
+.light-blue-text {
+    color: #85a3f3;
+}
+
 .location-text {
     font-style: italic;
     font-size: 14px;
@@ -88,17 +152,31 @@ h5 {
     float: right;
 }
 
-p {
-    font-size: 14px;
-    color: #333;
-    line-height: 21px;
+
+.project-image {
+    display: block;
 }
 
-a {
-    color: #092568;
-    text-decoration: none;
-    margin-top: 10px;
+.project-image-container {
+    display: inline-block;
+}
+
+.project-image-container a {
     display: block;
+    margin: 0;
+}
+
+
+
+
+
+.skills-header {
+    color: #85a3f3;
+    clear: both;
+}
+
+.underline-link:hover {
+    text-decoration: underline;
 }
 
 .welcome-message {
@@ -106,19 +184,6 @@ a {
     color: #f3f3f3;
     line-height: 28px;
     max-width: 650px;
-}
-
-#skills-h3 {
-    color: #85a3f3;
-    display: none;
-}
-
-.light-blue {
-    background-color: #85a3f3;
-}
-
-.light-blue-text {
-    color: #85a3f3;
 }
 
 .white-text {
@@ -135,126 +200,14 @@ a {
     color: orange;
 }
 
-.gray {
-    background-color: #f3f3f3;
-    padding-bottom: 10px;
-    clear: both;
-}
-
-.dark-gray {
-    background-color: #4a4a4a;
-}
-
 #header {
     background-color: #0f1f4c;
-}
-
-.flex-box {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-}
-
-.center-content {
-    padding: 2.5% 5%;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.biopic {
-    float: left;
-    padding: 10px;
-    width: 200px;
-    display: block;
-}
-
-img {
-    max-width: 100%;
-}
-
-span {
-    padding: 5px;
 }
 
 #lets-connect {
     text-align: center;
     color: #3366ff;
     background-color: #0f1f4c;
-}
-
-
-/* Media queries to handle various device widths */
-
-@media only screen and (max-width: 1024px) {
-    #lets-connect {
-        margin-top: 5%;
-    }
-}
-
-@media only screen and (max-width:900px) {
-    .biopic {
-        width: 175px;
-    }
-}
-
-@media only screen and (min-width: 750px) {
-    #skills-h3,
-    .biopic {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 749px) {
-    #lets-connect {
-        margin-top: 10%;
-    }
-    .biopic {
-        width: 150px;
-    }
-    .welcome-message {
-        font-size: 14px;
-    }
-}
-
-.contact.flex-item {
-    padding-bottom: 5px;
-}
-
-
-/* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
-
-@media only screen and (max-width: 749px) and (min-width: 650px) {
-    #topContacts,
-    #footerContacts {
-        display: block;
-        -moz-column-count: 2;
-        -moz-column-gap: 20px;
-        -webkit-column-count: 2;
-        -webkit-column-gap: 20px;
-        column-count: 2;
-        column-gap: 20px;
-        height: 85px;
-        text-align: left;
-    }
-}
-
-
-/* Show contact info in one column. */
-
-@media only screen and (max-width: 649px) {
-    #topContacts,
-    #footerContacts {
-        display: block;
-        text-align: left;
-    }
-    .welcome-message {
-        display: block;
-    }
 }
 
 #map {
@@ -269,8 +222,68 @@ span {
     padding-bottom: 5%;
 }
 
+
+/* Media queries to handle various device widths */
+
 @media only screen and (max-width: 450px) {
     #role {
         display: block;
+    }
+}
+
+
+/* Show contact info in one column. */
+
+@media only screen and (max-width: 649px) {
+    #topContacts,
+    #footerContacts {
+        display: block;
+        text-align: left;
+    }
+    .welcome-message {
+        display: block;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+
+/* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
+
+@media only screen and (min-width: 650px) and (max-width: 749px) {
+    #topContacts,
+    #footerContacts {
+        display: block;
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 20px;
+        height: 85px;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+    .biopic {
+        width: 150px;
+    }
+    .welcome-message {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .skills-header,
+    .biopic {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .biopic {
+        width: 175px;
     }
 }
