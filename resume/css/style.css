@@ -61,6 +61,11 @@ h4 {
     line-height: 17px;
 }
 
+hr {
+    max-width: 1000px;
+    margin-left: 0;
+}
+
 img {
     max-width: 100%;
 }
@@ -83,13 +88,6 @@ ul {
 .work-entry,
 .project-entry {
     padding: 0 5%;
-}
-
-.biopic {
-    float: left;
-    padding: 10px;
-    width: 175px;
-    display: block;
 }
 
 .center-content {
@@ -139,8 +137,9 @@ ul {
     background-color: #85a3f3;
 }
 
-.light-blue-text {
+.contact-type {
     color: #85a3f3;
+    padding: 5px 5px 5px 0;
 }
 
 .location-text {
@@ -165,8 +164,10 @@ ul {
 }
 
 .skills-header {
+    display: inline;
     color: #85a3f3;
     clear: both;
+    padding-left: 0px;
 }
 
 .underline-link:hover {
@@ -177,7 +178,9 @@ ul {
     font-size: 16px;
     color: #f3f3f3;
     line-height: 28px;
-    max-width: 575px;
+    max-width: 950px;
+    padding: 10px 0 0 0;
+    display: block;
 }
 
 .white-text {
@@ -192,6 +195,25 @@ ul {
 
 .white-text a:hover {
     color: orange;
+}
+
+#biopic-big {
+    padding: 10px 15px 10px 0;
+    width: 130px;
+    height: 130px;
+}
+
+#biopic-small {
+    padding: 10px 10px 10px 0;
+    width: 80px;
+    height: 80px;
+}
+
+#biopic-small-container {
+    display: none;
+    float: left;
+    width: 90px;
+    height: 90px;
 }
 
 #header {
@@ -216,42 +238,58 @@ ul {
     padding-bottom: 5%;
 }
 
+#name {
+    padding: 0 10px 0 0;
+}
+
+#name-role-container {
+    overflow: hidden;
+}
+
+#role {
+    padding: 5px 5px 5px 0px;
+}
+
+#skills-container {
+    max-width: 1000px;
+}
+
 #skills-languages,
 #skills-fw-lib,
 #skills-other {
-    max-width: 800px;
+    max-width: 660px;
+    padding: 10px 0 10px 0;
 }
 
-/* Media queries to handle various device widths */
-
-@media only screen and (max-width: 450px) {
-    #role {
-        display: block;
-    }
+#top-contacts {
+    max-width: 1000px;
 }
 
+#top-content-container {
+    max-width: 1000px;
+}
 
-/* Show contact info in one column. */
+#top-content-left {
+    float: left;
+    width: 145px;
+    height: 150px;
+}
 
-@media only screen and (max-width: 649px) {
-    #topContacts,
-    #footerContacts {
-        display: block;
-        text-align: left;
-    }
-    .welcome-message {
-        display: block;
-        font-size: 14px;
-        line-height: 24px;
-    }
+#top-content-right {
+    overflow: hidden;
+}
+
+#top-rule {
+    display: block;
+    max-width: 855px;
 }
 
 
 /* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
 
-@media only screen and (min-width: 650px) {
-    #topContacts,
-    #footerContacts {
+@media only screen and (min-width: 750px) {
+    #top-contacts,
+    #footer-contacts {
         font-size: 16px;
         display: block;
         -moz-column-count: 2;
@@ -266,8 +304,35 @@ ul {
 }
 
 @media only screen and (max-width: 749px) {
-    .biopic {
-        width: 150px;
+    #biopic-small-container {
+        display: inline;
+    }
+    #name {
+        font-size: 36px;
+    }
+    #role {
+        font-size: 14px;
+        padding: 5px 0 0 0;
+    }
+    #top-content-left {
+        display: none;
+    }
+    #top-rule {
+        vertical-align: bottom;
+        margin-top: 0;
+    }
+    #top-contacts,
+    #footer-contacts {
+        font-size: 14px;
+        display: block;
+        -moz-column-count: 2;
+        -moz-column-gap: 40px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 40px;
+        column-count: 2;
+        column-gap: 40px;
+        height: 85px;
+        text-align: left;
     }
     .welcome-message {
         font-size: 14px;
@@ -275,15 +340,63 @@ ul {
     }
 }
 
-@media only screen and (min-width: 750px) {
-    .skills-header,
-    .biopic {
+@media only screen and (max-width: 600px) {
+    #top-content-right {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #biopic-small-container {
+        float: left;
+        display: inline;
+        width: 90px;
+    }
+    #name-role-container {
+        overflow: hidden;
+        padding-top: 40px;
+    }
+    #top-contacts {
+        width: 100%;
         display: block;
+    }
+    #top-content-right {
+        display: inline;
     }
 }
 
-@media only screen and (max-width:900px) {
-    .biopic {
-        width: 175px;
+@media only screen and (max-width: 500px) {
+    #name {
+        font-size: 24px;
+    }
+    #name-role-container {
+        padding-top: 12px;
+    }
+
+    /* show name and role on separate rows */
+    #role {
+        display: block;
+        margin-bottom: 8px;
+        padding: 0 0 0 2px;
+    }
+
+    /* Show contact info in one column. */
+    #top-contacts {
+        font-size: 14px;
+        display: block;
+        -moz-column-count: 1;
+        -moz-column-gap: 40px;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 40px;
+        column-count: 1;
+        column-gap: 0px;
+        height: auto;
+        text-align: left;
+
+        max-width: 100%;
+        padding-top: 5px;
+        width: auto;
+    }
+    .contact {
+        display: block;
     }
 }
