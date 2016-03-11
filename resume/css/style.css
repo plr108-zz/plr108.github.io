@@ -70,6 +70,10 @@ img {
     max-width: 100%;
 }
 
+li {
+    font-size: 16px;
+}
+
 p {
     font-size: 14px;
     color: #333;
@@ -88,6 +92,7 @@ ul {
 .work-entry,
 .project-entry {
     padding: 5px 5%;
+    max-width: 845px;
 }
 
 .center-content {
@@ -173,6 +178,12 @@ ul {
     color: #85a3f3;
     clear: both;
     padding-left: 0px;
+    font-size: 16px;
+}
+
+.skills-ul {
+    max-width: 660px;
+    padding: 10px 0 10px 0;
 }
 
 .tech-used {
@@ -185,19 +196,12 @@ ul {
 
 .welcome-bullet {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     list-style-type: disc;
     list-style-position: inside;
     text-indent: -1em;
-}
-
-.welcome-message {
-    font-size: 16px;
-    color: #f3f3f3;
-    line-height: 28px;
-    max-width: 950px;
-    padding: 10px 0 0 0;
-    display: block;
+    margin-left: 15px;
+    margin-top: 5px;
 }
 
 .white-text {
@@ -237,8 +241,12 @@ ul {
     background-color: #0f1f4c;
 }
 
+#footer-contacts {
+    max-width: 1005px;
+}
+
 #lets-connect {
-    text-align: center;
+    text-align: left;
     color: #3366ff;
     background-color: #0f1f4c;
 }
@@ -246,12 +254,13 @@ ul {
 #map {
     display: block;
     height: 100%;
-    margin: 0 5%;
+    margin: 0 10%;
 }
 
 #mapDiv {
     height: 400px;
     width: 100%;
+    max-width: 1005px;
     padding-bottom: 5%;
 }
 
@@ -263,19 +272,16 @@ ul {
     overflow: hidden;
 }
 
+#resume-links {
+    max-width: 845px;
+}
+
 #role {
     padding: 5px 5px 5px 0px;
 }
 
 #skills-container {
     max-width: 1000px;
-}
-
-#skills-languages,
-#skills-fw-lib,
-#skills-other {
-    max-width: 660px;
-    padding: 10px 0 10px 0;
 }
 
 #top-contacts {
@@ -293,6 +299,7 @@ ul {
 }
 
 #top-content-right {
+    max-width: 700px;
     overflow: hidden;
 }
 
@@ -300,7 +307,9 @@ ul {
     display: block;
     max-width: 855px;
 }
-
+#welcome-bullets-list {
+    max-width: 845px;
+}
 
 /* Show contact info in two columns.  Modified version of approach shown here:  http://jsfiddle.net/qUAT6/ */
 
@@ -321,6 +330,18 @@ ul {
 }
 
 @media only screen and (max-width: 749px) {
+    li {
+        font-size: 14px;
+    }
+    .resume-link-text {
+        font-size: 14px;
+    }
+    .skills-header {
+        font-size: 14px;
+    }
+    .skills-ul {
+        max-width: 500px;
+    }
     #biopic-small-container {
         display: inline;
     }
@@ -333,6 +354,9 @@ ul {
     }
     #top-content-left {
         display: none;
+    }
+    #top-content-container {
+        height: 130px;
     }
     #top-rule {
         vertical-align: bottom;
@@ -351,17 +375,9 @@ ul {
         height: 85px;
         text-align: left;
     }
-    .welcome-message {
-        font-size: 14px;
-        line-height: 24px;
-    }
 }
 
 @media only screen and (max-width: 600px) {
-    .welcome-bullet {
-        margin-left: 15px;
-        margin-top: 5px;
-    }
     #top-content-right {
         width: 100%;
         display: flex;
@@ -380,18 +396,15 @@ ul {
         width: 100%;
         display: block;
     }
+    #top-content-container {
+        height: 170px;
+    }
     #top-content-right {
         display: inline;
-    }
-    #welcome-container {
-        display: none;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    li {
-        font-size: 14px;
-    }
     .contact {
         display: block;
     }
@@ -430,8 +443,8 @@ ul {
         padding-top: 5px;
         width: auto;
     }
-    .skills-header {
-        font-size: 14px;
+    #top-content-container {
+        height: auto;
     }
     /* display skills in 2 columns */
     #skills-fw-lib {
