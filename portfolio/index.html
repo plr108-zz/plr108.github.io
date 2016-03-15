@@ -9,71 +9,97 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Patrick Roche - Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald|Lato">
-    <script src="js/jquery-2.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Doppio+One|Roboto">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6" id="biopic-name-role">
+    <div id="main-container">
+        <div id="header">
+            <div id="biopic-name-role">
                 <div id="biopic-container">
-                    <img class="img-responsive" id="biopic" src="images/me.jpg" alt="Logo Image">
+                    <img id="biopic" src="images/me.jpg" alt="Logo Image">
                 </div>
                 <div id="name-role-container">
-                    <h1 id="name">Patrick Roche</h1>
-                    <h4 id="role">Web Developer</h4>
+                    <div id="name">Patrick Roche</div>
+                    <h4 id="role">Front-End Web Developer</h4>
                 </div>
             </div>
-            <div class="col-md-6" id="contact-info">
-                <ul id="top-contacts">
-                    <li class="contact flex-item"><span class="contact-type">Mobile</span><span class="contact-value"><a href="tel:724-875-3487" target="_blank">724-875-3487</a></span></li>
-                    <li class="contact flex-item"><span class="contact-type">Email</span><span class="contact-value"><a href="mailto:patrick.l.roche@gmail.com" target="_blank">patrick.l.roche@gmail.com</a></span></li>
-                    <li class="contact flex-item"><span class="contact-type">LinkedIn</span><span class="contact-value"><a href="https://www.linkedin.com/in/patrickroche1" target="_blank">patrickroche1</a></span></li>
-                    <li class="contact flex-item"><span class="contact-type">GitHub</span><span class="contact-value"><a href="https://github.com/plr108" target="_blank">plr108</a></span></li>
-                    <li class="contact flex-item"><span class="contact-type">Portfolio</span><span class="contact-value"><a href="https://plr108.github.io/" target="_blank">plr108.github.io</a></span></li>
-                    <li class="contact flex-item"><span class="contact-type">Location</span><span class="contact-value"><a href="https://www.google.com/maps/place/Irwin,+PA+15642/@40.3189343,-79.7836634,12z/data=!3m1!4b1!4m2!3m1!1s0x8834dd3f7b945281:0x3ada31dc83155eba" target="_blank">Irwin, PA</a></span></li>
+            <div id="contact-container">
+                <ul id="contacts">
+                    <li class="contact"><span class="contact-type">Mobile</span><span class="contact-value"><a href="tel:724-875-3487" target="_blank">724-875-3487</a></span></li>
+                    <li class="contact"><span class="contact-type">Email</span><span class="contact-value"><a href="mailto:patrick.l.roche@gmail.com" target="_blank">patrick.l.roche@gmail.com</a></span></li>
+                    <li class="contact"><span class="contact-type">Resume</span><span class="contact-value"><a href="https://drive.google.com/file/d/0Bw9Pzles4ekkT3lEUDlVNzQ5M3M/view?usp=sharing" target="_blank">Word</a><span class="span-dot">•</span><a href="https://drive.google.com/file/d/0Bw9Pzles4ekkWm9Lc0l5MEc2ME0/view?usp=sharing" target="_blank">PDF</a><span class="span-dot">•</span><a href="https://plr108.github.io/resume/index.html" target="_blank">Online</a></span>
+                    </li>
+                    <li class="contact"><span class="contact-type">LinkedIn</span><span class="contact-value"><a href="https://www.linkedin.com/in/patrickroche1" target="_blank">patrickroche1</a></span></li>
+                    <li class="contact"><span class="contact-type">GitHub</span><span class="contact-value"><a href="https://github.com/plr108" target="_blank">plr108</a></span></li>
+                    <li class="contact"><span class="contact-type">Location</span><span class="contact-value"><a href="https://www.google.com/maps/place/Irwin,+PA+15642/@40.3189343,-79.7836634,12z/data=!3m1!4b1!4m2!3m1!1s0x8834dd3f7b945281:0x3ada31dc83155eba" target="_blank">Irwin, PA</a></span></li>
                 </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2 id="project-header">Projects</h2>
-            </div>
+        <div id="project-header-container">
+            <div id="project-header">Projects</div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 col-lg-4">
-                <div class="project-title">Project 1 Title</div>
-                <div class="project-description">A description of the awesomeness that is this project. More words. And filler text. Loren Awesome.</div>
-                <div class="project-repo">GitHub Repository</div>
+        <div id=project-container>
+            <div class="wrapper">
+                <div class="aspect-ratio"></div>
+                <div class="content">
+                    <div class="inner-content">
+                        <div class="project-title">Ballpark Map</div>
+                        <div class="project-description">Responsive web app that displays info about the ballparks of Major League Baseball.</div>
+                        <div class="project-repo">GitHub Repository</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="project-title">Project 2 Title</div>
-                <div class="project-description">A description of the awesomeness that is this project. More words. And filler text. Loren Awesome.</div>
-                <div class="project-repo">GitHub Repository</div>
+            <div class="wrapper">
+                <div class="aspect-ratio"></div>
+                <div class="content">
+                    <div class="inner-content">
+                        <div class="project-title">Feed the Ladybugs</div>
+                        <div class="project-description">Web game based on Frogger (Desktop only). Built using object-oriented JavaScript.</div>
+                        <div class="project-repo">GitHub Repository</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="project-title">Project 3 Title</div>
-                <div class="project-description">A description of the awesomeness that is this project. More words. And filler text. Loren Awesome.</div>
-                <div class="project-repo">GitHub Repository</div>
+            <div class="wrapper">
+                <div class="aspect-ratio"></div>
+                <div class="content">
+                    <div class="inner-content">
+                        <div class="project-title">Online Resume</div>
+                        <div class="project-description">Enhanced, responsive web app version of my resume.</div>
+                        <div class="project-repo">GitHub Repository</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="project-title">Project 4 Title</div>
-                <div class="project-description">A description of the awesomeness that is this project. More words. And filler text. Loren Awesome.</div>
-                <div class="project-repo">GitHub Repository</div>
+            <div class="wrapper">
+                <div class="aspect-ratio"></div>
+                <div class="content">
+                    <div class="inner-content">
+                        <div class="project-title">Website Optimization</div>
+                        <div class="project-description">Demonstration of improving load times and frame rate of a pre-existing website.</div>
+                        <div class="project-repo">GitHub Repository</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="project-title">Project 5 Title</div>
-                <div class="project-description">A description of the awesomeness that is this project. More words. And filler text. Loren Awesome.</div>
-                <div class="project-repo">GitHub Repository</div>
+            <div class="wrapper">
+                <div class="aspect-ratio"></div>
+                <div class="content">
+                    <div class="inner-content">
+                        <div class="project-title">Freelance Work: MCC Sings</div>
+                        <div class="project-description">Created a responsive, Bootstrap-based website for a non-profit concert group.</div>
+                        <div class="project-repo">GitHub Repository</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="project-title">Project 6 Title</div>
-                <div class="project-description">A description of the awesomeness that is this project. More words. And filler text. Loren Awesome.</div>
-                <div class="project-repo">GitHub Repository</div>
+            <div class="wrapper">
+                <div class="aspect-ratio"></div>
+                <div class="content">
+                    <div class="inner-content">
+                        <div class="project-title">Jasmine Testing</div>
+                        <div class="project-description">Demonstration of using Test-Driven Development and the Jasmine test framework.</div>
+                        <div class="project-repo">GitHub Repository</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -1,0 +1,181 @@
+* {
+    font-family: 'Doppio One', sans-serif;
+    color: #000;
+}
+
+.aspect-ratio {
+    padding-bottom: 28.125%;
+}
+
+.contact span {
+    display: inline-block;
+}
+
+.contact-type {
+    width: 75px;
+    padding: 5px 0px 0px 0px;
+}
+
+.contact-value a {
+    text-decoration: none;
+}
+
+.contact-value a,
+.project-description {
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.contact-value a:hover {
+    color: #000099;
+    font-weight: bold;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2%;
+    background-color: #ff6698;
+}
+
+.inner-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 2% 2% 2% 2%;
+    background-color: #ffff66;
+}
+
+.inner-content:hover {
+    background-color: #98ff66;
+}
+
+.project-repo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.small-tile {
+    color: red;
+}
+
+.span-dot {
+    padding: 0px 5px;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+#biopic {
+    padding: 10px;
+    width: 75px;
+    height: 80px;
+    float: left;
+}
+
+#biopic-name-role {
+    height: auto;
+}
+
+#biopic-name-role,
+#contact-container,
+#project-header-container {
+    border: 1px solid black;
+}
+
+#name {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 0 10px 0;
+}
+
+#name-role {
+    text-align: right;
+    max-width: 2000px;
+    overflow: hidden;
+}
+
+#role {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+
+#project-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0 5px 10px;
+}
+
+#contacts {
+    list-style-type: none;
+    padding: 0px 0px 0px 10px;
+    margin: 5px 0px;
+}
+
+@media only screen and (min-width: 550px) {
+    #contacts {
+        display: block;
+        width: auto;
+        -moz-column-count: 2;
+        -moz-column-gap: 10px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 10px;
+        column-count: 2;
+        column-gap: 10px;
+        height: 75px;
+        text-align: left;
+        max-width: 100%;
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .contact-type {
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    #contacts {
+        display: block;
+        width: auto;
+        -moz-column-count: 3;
+        -moz-column-gap: 10px;
+        -webkit-column-count: 3;
+        -webkit-column-gap: 10px;
+        column-count: 3;
+        column-gap: 10px;
+        height: 60px;
+        text-align: left;
+        max-width: 100%;
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .wrapper {
+        width: 50%;
+    }
+
+    #project-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        resize: both;
+        overflow: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #main-container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
