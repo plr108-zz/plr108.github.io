@@ -9,7 +9,7 @@
 
 .contact .contact-type {
     color: #85a3f3;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .contact span {
@@ -23,7 +23,7 @@
 
 .contact-value a {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
 }
 
@@ -191,7 +191,7 @@
     margin: 0px;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 560px) {
     #contacts {
         display: block;
         width: auto;
@@ -212,10 +212,10 @@
     .contact-type {
         text-align: right;
         margin-right: 10px;
-        font-size: 16px;
+        font-size: 17px;
     }
     .contact-value a {
-        font-size: 14px;
+        font-size: 15px;
     }
     #contacts {
         display: block;
