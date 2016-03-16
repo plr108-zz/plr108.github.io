@@ -7,6 +7,10 @@
     padding-bottom: 28.125%;
 }
 
+.contact .contact-type {
+    color: #85a3f3;
+}
+
 .contact span {
     display: inline-block;
 }
@@ -18,17 +22,18 @@
 
 .contact-value a {
     text-decoration: none;
+    font-size: 14px;
+    color: #fff;
 }
 
 .contact-value a,
-.project-description {
+.project-description,
+#role {
     font-family: 'Roboto';
-    font-size: 14px;
 }
 
 .contact-value a:hover {
-    color: #000099;
-    font-weight: bold;
+    color: #ff9900;
 }
 
 .content {
@@ -51,6 +56,14 @@
 
 .inner-content:hover {
     /* add effect here */
+}
+
+.project {
+    margin-bottom: 5px;
+}
+
+.project-description {
+    font-size: 14px;
 }
 
 .project-image {
@@ -80,9 +93,10 @@
 
 .span-dot {
     padding: 0px 5px;
+        color: #fff;
 }
 
-.wrapper {
+.project {
     position: relative;
     width: 100%;
 }
@@ -95,8 +109,8 @@
 }
 
 #biopic-name-role {
-    height: auto;
-    background-color: #85a3f3;
+    height: 95px;
+    background-color: #0f1f4c;
 }
 
 #biopic-name-role,
@@ -105,8 +119,13 @@
     border: 1px solid black;
 }
 
+#contact-container {
+    background-color: #0f1f4c;
+}
+
 #name {
-    font-size: 28px;
+    color: #85a3f3;
+    font-size: 26px;
     font-weight: bold;
     padding: 15px 0 10px 0;
 }
@@ -118,9 +137,9 @@
 }
 
 #role {
-    color: #0f1f4c;
-    font-size: 16px;
-    margin: 0 0 15px 0;
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 15px;
 }
 
 #project-1 {
@@ -159,12 +178,14 @@
     background-color: #e2e2e2;
 }
 
-
-
 #project-header {
     font-size: 24px;
     font-weight: bold;
     margin: 5px 0 5px 10px;
+}
+
+#project-header-container {
+    background-color: #e8edfd;
 }
 
 #contacts {
@@ -173,7 +194,7 @@
     margin: 5px 0px;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 600px) {
     #contacts {
         display: block;
         width: auto;
@@ -183,7 +204,7 @@
         -webkit-column-gap: 10px;
         column-count: 2;
         column-gap: 10px;
-        height: 75px;
+        height: 80px;
         text-align: left;
         max-width: 100%;
         padding-top: 5px;
@@ -195,7 +216,6 @@
         text-align: right;
         margin-right: 10px;
     }
-
     #contacts {
         display: block;
         width: auto;
@@ -213,10 +233,9 @@
 }
 
 @media only screen and (min-width: 640px) {
-    .wrapper {
+    .project {
         width: 50%;
     }
-
     #project-container {
         display: flex;
         flex-wrap: wrap;
