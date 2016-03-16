@@ -57,6 +57,9 @@
 
 .project {
     margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
 }
 
 .project-description {
@@ -116,11 +119,6 @@
     color: #fff;
 }
 
-.project {
-    position: relative;
-    width: 100%;
-}
-
 #biopic {
     padding: 10px;
     width: 80px;
@@ -131,6 +129,12 @@
 #biopic-name-role {
     height: 95px;
     background-color: #0f1f4c;
+}
+
+#contacts {
+    list-style-type: none;
+    padding: 0px 0px 0px 10px;
+    margin: 0px;
 }
 
 #contact-container {
@@ -148,12 +152,6 @@
 
 #name-role-container {
     display: inline-block;
-}
-
-#role {
-    color: #fff;
-    font-size: 14px;
-    margin: 0 0 0 2px;
 }
 
 #project-1 .aspect-ratio {
@@ -204,10 +202,20 @@
     margin-bottom: 5px;
 }
 
-#contacts {
-    list-style-type: none;
-    padding: 0px 0px 0px 10px;
-    margin: 0px;
+#role {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 0 2px;
+}
+
+@media only screen and (max-width: 319px) {
+    body,
+    #main-container,
+    #header,
+    #project-header-container,
+    #project-container {
+        width: 304px;
+    }
 }
 
 @media only screen and (min-width: 560px) {
