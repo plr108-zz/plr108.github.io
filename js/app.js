@@ -48,8 +48,38 @@ $(".project").hover(function() {
     });
 
 
-$(".project-repo").click(function() {
+$("#project-1-repo").click(function() {
     if ($(this).find("a").length) {
         window.open("https://github.com/plr108/ballpark-map", "_blank");
+    }
+});
+
+$("#project-2-repo").click(function() {
+    if ($(this).find("a").length) {
+        window.open("https://github.com/plr108/feed-the-ladybugs", "_blank");
+    }
+});
+
+$("#project-3-repo").click(function() {
+    if ($(this).find("a").length) {
+        window.open("https://github.com/plr108/resume", "_blank");
+    }
+});
+
+$("#project-4-repo").click(function() {
+    if ($(this).find("a").length) {
+        window.open("https://github.com/plr108/web-perf", "_blank");
+    }
+});
+
+$("#project-5-repo").click(function() {
+    if ($(this).find("a").length) {
+        window.open("https://github.com/plr108/mccsings", "_blank");
+    }
+});
+
+$("#project-6-repo").click(function() {
+    if ($(this).find("a").length) {
+        window.open("https://github.com/plr108/jasmine-testing", "_blank");
     }
 });
