@@ -9,6 +9,7 @@
 
 .contact .contact-type {
     color: #85a3f3;
+    font-size: 14px;
 }
 
 .contact span {
@@ -22,7 +23,7 @@
 
 .contact-value a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
 }
 
@@ -93,7 +94,7 @@
 
 .span-dot {
     padding: 0px 5px;
-        color: #fff;
+    color: #fff;
 }
 
 .project {
@@ -113,14 +114,10 @@
     background-color: #0f1f4c;
 }
 
-#biopic-name-role,
-#contact-container,
-#project-header-container {
-    border: 1px solid black;
-}
-
 #contact-container {
     background-color: #0f1f4c;
+    margin-top: 5px;
+    padding-bottom: 1px;
 }
 
 #name {
@@ -130,19 +127,17 @@
     padding: 15px 0 10px 0;
 }
 
-#name-role {
-    text-align: right;
-    max-width: 2000px;
-    overflow: hidden;
+#name-role-container {
+    display: inline-block;
 }
 
 #role {
     color: #fff;
     font-size: 14px;
-    margin: 0 0 15px;
+    margin: 0 0 0 2px;
 }
 
-#project-1 {
+#project-1 .aspect-ratio {
     background-color: #090;
 }
 
@@ -158,43 +153,45 @@
     color: #FFF;
 }
 
-#project-2 {
+#project-2 .aspect-ratio {
     background-color: #dc4747;
 }
 
-#project-3 {
+#project-3 .aspect-ratio {
     background-color: #0f1f4c;
 }
 
-#project-4 {
+#project-4 .aspect-ratio {
     background-color: #ffff33;
 }
 
-#project-5 {
+#project-5 .aspect-ratio {
     background-color: #6b92b9;
 }
 
-#project-6 {
+#project-6 .aspect-ratio {
     background-color: #e2e2e2;
 }
 
 #project-header {
     font-size: 24px;
     font-weight: bold;
-    margin: 5px 0 5px 10px;
+    margin: 5px 0 5px 8px;
 }
 
 #project-header-container {
-    background-color: #e8edfd;
+    background-color: #ccc;
+    padding-bottom: 1px;
+    margin-bottom: 5px;
 }
 
 #contacts {
     list-style-type: none;
     padding: 0px 0px 0px 10px;
-    margin: 5px 0px;
+    margin: 0px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
     #contacts {
         display: block;
         width: auto;
@@ -215,6 +212,10 @@
     .contact-type {
         text-align: right;
         margin-right: 10px;
+        font-size: 16px;
+    }
+    .contact-value a {
+        font-size: 14px;
     }
     #contacts {
         display: block;
@@ -236,6 +237,21 @@
     .project {
         width: 50%;
     }
+    #project-1 .aspect-ratio,
+    #project-3 .aspect-ratio,
+    #project-5 .aspect-ratio {
+        margin-right: 2.5px;
+    }
+    #project-2 .aspect-ratio,
+    #project-4 .aspect-ratio,
+    #project-6 .aspect-ratio {
+        margin-left: 2.5px;
+    }
+    .inner-content {}
+    #project-5,
+    #project-6 {
+        margin-bottom: 0px;
+    }
     #project-container {
         display: flex;
         flex-wrap: wrap;
@@ -245,7 +261,7 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1210px) {
     #main-container {
         width: 1200px;
         margin: 0 auto;
