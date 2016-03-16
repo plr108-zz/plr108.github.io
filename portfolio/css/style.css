@@ -38,7 +38,6 @@
     left: 0;
     right: 0;
     padding: 2%;
-    background-color: #ff6698;
 }
 
 .inner-content {
@@ -48,17 +47,31 @@
     left: 0;
     right: 0;
     margin: 2% 2% 2% 2%;
-    background-color: #ffff66;
 }
 
 .inner-content:hover {
-    background-color: #98ff66;
+    /* add effect here */
+}
+
+.project-image {
+    height: 100%;
+    width: 100%;
+}
+
+.project-image-container {
+    width: 26px;
+    margin: 0 5px 0 0;
+    float: left;
 }
 
 .project-repo {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 32px;
+}
+
+.project-text {
+    overflow: hidden;
 }
 
 .small-tile {
@@ -83,6 +96,7 @@
 
 #biopic-name-role {
     height: auto;
+    background-color: #85a3f3;
 }
 
 #biopic-name-role,
@@ -104,9 +118,48 @@
 }
 
 #role {
+    color: #0f1f4c;
     font-size: 16px;
     margin: 0 0 15px 0;
 }
+
+#project-1 {
+    background-color: #090;
+}
+
+#project-1 .project-text-container .project-title,
+#project-1 .project-text-container .project-description,
+#project-1 .project-text-container .project-repo,
+#project-2 .project-text-container .project-title,
+#project-2 .project-text-container .project-description,
+#project-2 .project-text-container .project-repo,
+#project-3 .project-text-container .project-title,
+#project-3 .project-text-container .project-description,
+#project-3 .project-text-container .project-repo {
+    color: #FFF;
+}
+
+#project-2 {
+    background-color: #dc4747;
+}
+
+#project-3 {
+    background-color: #0f1f4c;
+}
+
+#project-4 {
+    background-color: #ffff33;
+}
+
+#project-5 {
+    background-color: #6b92b9;
+}
+
+#project-6 {
+    background-color: #e2e2e2;
+}
+
+
 
 #project-header {
     font-size: 24px;
