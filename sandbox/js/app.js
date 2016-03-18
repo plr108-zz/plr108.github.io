@@ -9,38 +9,38 @@ var projects = [{
 }, {
     projectID: 1,
     imgID: "project-image-2",
-    icon: "images/project1-icon.png",
-    small: "images/project1-small.png",
-    medium: "images/project1-medium.png",
-    large: "images/project1-large.png"
+    icon: "images/project2-icon.png",
+    small: "images/project2-small.png",
+    medium: "images/project2-medium.png",
+    large: "images/project2-large.png"
 }, {
     projectID: 2,
     imgID: "project-image-3",
-    icon: "images/project1-icon.png",
-    small: "images/project1-small.png",
-    medium: "images/project1-medium.png",
-    large: "images/project1-large.png"
+    icon: "images/project3-icon.png",
+    small: "images/project3-small.png",
+    medium: "images/project3-medium.png",
+    large: "images/project3-large.png"
 }, {
     projectID: 3,
     imgID: "project-image-4",
-    icon: "images/project1-icon.png",
-    small: "images/project1-small.png",
-    medium: "images/project1-medium.png",
-    large: "images/project1-large.png"
+    icon: "images/project4-icon.png",
+    small: "images/project4-small.png",
+    medium: "images/project4-medium.png",
+    large: "images/project4-large.png"
 }, {
     projectID: 4,
     imgID: "project-image-5",
-    icon: "images/project1-icon.png",
-    small: "images/project1-small.png",
-    medium: "images/project1-medium.png",
-    large: "images/project1-large.png"
+    icon: "images/project5-icon.png",
+    small: "images/project5-small.png",
+    medium: "images/project5-medium.png",
+    large: "images/project5-large.png"
 }, {
     projectID: 5,
     imgID: "project-image-6",
-    icon: "images/project1-icon.png",
-    small: "images/project1-small.png",
-    medium: "images/project1-medium.png",
-    large: "images/project1-large.png"
+    icon: "images/project6-icon.png",
+    small: "images/project6-small.png",
+    medium: "images/project6-medium.png",
+    large: "images/project6-large.png"
 }];
 
 var projectView = {
