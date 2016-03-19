@@ -3,6 +3,14 @@
     color: #000;
 }
 
+body,
+#main-container,
+#header,
+#project-header-container,
+#project-container {
+    width: 304px;
+}
+
 .aspect-ratio {
     padding-bottom: 28.125%;
 }
@@ -63,15 +71,11 @@
 }
 
 .project-description {
-    font-size: 14px;
-}
-
-.project-image {
-    height: 100%;
-    width: 100%;
+    font-size: 13px;
 }
 
 .project-image-container {
+    overflow: hidden;
     width: 26px;
     margin: 0 5px 0 0;
     float: left;
@@ -208,13 +212,13 @@
     margin: 0 0 0 2px;
 }
 
-@media only screen and (max-width: 319px) {
+@media only screen and (min-width: 320px) {
     body,
     #main-container,
     #header,
     #project-header-container,
     #project-container {
-        width: 304px;
+        width: auto;
     }
 }
 
@@ -274,7 +278,6 @@
     #project-6 .aspect-ratio {
         margin-left: 2.5px;
     }
-    .inner-content {}
     #project-5,
     #project-6 {
         margin-bottom: 0px;
@@ -292,5 +295,101 @@
     #main-container {
         width: 1200px;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .project-image-container {
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+    }
+    .project-text-container {
+        width: 70%;
+        position: absolute;
+        left: 30%;
+        height: 100%;
+        margin-left: 5px;
+    }
+    .project-repo {
+        left: 0px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .project-image-container {
+        width: 40%;
+    }
+    .project-text-container {
+        width: 60%;
+        left: 40%;
+    }
+}
+
+@media only screen and (min-width: 560px) {
+    .project-image-container {
+        width: 50%;
+    }
+    .project-text-container {
+        width: 50%;
+        left: 50%;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .project-image-container {
+        width: 26px;
+        height: auto;
+        position: relative;
+        left: auto;
+    }
+    .project-text-container {
+        width: 100%;
+        position: relative;
+        left: auto;
+        margin-left: 0;
+    }
+    .project-repo {
+        left: 32px;
+    }
+}
+
+@media only screen and (min-width: 784px) {
+    .project-image-container {
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+    }
+    .project-text-container {
+        width: 70%;
+        position: absolute;
+        left: 30%;
+        height: 100%;
+        margin-left: 5px;
+    }
+    .project-repo {
+        left: 0px;
+    }
+}
+
+@media only screen and (min-width: 984px) {
+    .project-image-container {
+        width: 40%;
+    }
+    .project-text-container {
+        width: 60%;
+        left: 40%;
+    }
+}
+
+@media only screen and (min-width: 1104px) {
+    .project-image-container {
+        width: 50%;
+    }
+    .project-text-container {
+        width: 50%;
+        left: 50%;
     }
 }
