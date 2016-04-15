@@ -57,7 +57,7 @@ var bio = {
         $("#name-role-container").append(formattedName);
         $("#name-role-container").append(formattedRole);
         $("#name-role-container").append('<hr id="top-rule">');
-        $("#top-content-right").append('<ul id="top-contacts"></ul>');
+        $("#top-content-right").append('<ul id="top-contacts"</ul>');
 
         // show contact info in header and footer
         $("#top-contacts, #footer-contacts").append(formattedMobile);
@@ -320,7 +320,7 @@ var education = {
 var work = {
     "jobs": [{
         "employer": "Philips Healthcare",
-        "title": "Process Control Engineer",
+        "title": "Senior Engineering Specialist",
         "location": "Pittsburgh, PA",
         "dates": "2010 - Present",
         "description": "Lead the development of processes to remanufacture medical devices at over 55 Philips and external service centers.  Create validation strategies for 24 product lines resulting in zero major findings in internal and external audits.  Continually improving the procedures related to process validation, including reducing equipment qualification times by 30%.",
